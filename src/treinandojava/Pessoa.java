@@ -30,5 +30,8 @@ public class Pessoa {
         this.cpf = cpf;
     }
 
+    public void andar() {
+        System.out.println("A pessoa esta andando");
+    }
 
 }

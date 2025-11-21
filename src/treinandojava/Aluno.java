@@ -1,6 +1,6 @@
 package treinandojava;
 
-public class Aluno {
+public class Aluno extends Pessoa {
     private int matricula;
     private String turma;
 
@@ -18,5 +18,10 @@ public class Aluno {
 
     public void setMatricula(int matricula) {
         this.matricula = matricula;
+    }
+
+    @Override
+    public void andar(){
+        System.out.println("O aluno esta andando");
     }
 }
