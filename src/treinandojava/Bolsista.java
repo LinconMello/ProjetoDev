@@ -12,7 +12,12 @@ public class Bolsista extends Aluno {
         this.descontoBolsa = descontoBolsa;
     }
 
+    @Override
     public void andar(){
         System.out.println("O bolsista esta andando");
+    }
+    @Override
+    public void pagarMensalidade(){
+        System.out.println("O bolsista não paga mensalidade!");
     }
 }

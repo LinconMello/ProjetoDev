@@ -24,4 +24,8 @@ public class Aluno extends Pessoa {
     public void andar(){
         System.out.println("O aluno esta andando");
     }
+
+    public void pagarMensalidade(){
+        System.out.println("O aluno pagou a mensalidade!");
+    }
 }
