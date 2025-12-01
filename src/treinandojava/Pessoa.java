@@ -6,6 +6,17 @@ public class Pessoa {
     private String sobrenome;
     private long cpf;
 
+    public Pessoa() {
+
+    }
+
+    public Pessoa(String nome, String sobrenome, long cpf) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.cpf = cpf;
+
+    }
+
     public String getNome() {
         return nome;
     }
@@ -34,4 +45,11 @@ public class Pessoa {
         System.out.println("A pessoa esta andando");
     }
 
+    @Override
+    public String toString() {
+        return "nome='" + nome + '\'' +
+                ", sobrenome='" + sobrenome + '\'' +
+                ", cpf=" + cpf +
+                '}';
+    }
 }

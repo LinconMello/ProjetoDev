@@ -8,20 +8,13 @@ public class Main {
 
         Scanner teclado = new Scanner(System.in);
 
-        Pessoa p1 = new Pessoa();
-        Pessoa p2 = new Aluno();
-        Pessoa p3 = new Bolsista();
+        Pessoa p1 = new Pessoa("Lincon", "Mello", 254789);
+        Pessoa p2 = new Aluno("Carlos", "Rodrigues", 479514, 2010, "Analise de Sistemas");
+        Pessoa p3 = new Bolsista("Vinicuis", "Freitas", 697235, 2085, "Administração", 30);
+        Pessoa p4 = new Professor("Alberto", "Alves", 125789, 4635, 5389.2f);
 
-        Pessoa[] pessoa = {p1, p2, p3};
+        System.out.println("Pessoa{" + p1.toString() + "\n" + p2.toString() + "\n" + p3.toString() + "\n" + p4.toString());
 
-
-        for (Pessoa correr : pessoa) {
-            correr.andar();
-        }
-        System.out.println("Digite seu nome: ");
-        String nome = teclado.nextLine();
-
-        System.out.println("\nNome digitado: " + nome);
 
     }
 }
